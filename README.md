@@ -33,6 +33,6 @@ installed before running the script: `R: install.packages(dplyr)
 5. `./run-analysis.R` - R scipt responsible for creating new summarized data frame.
 
 ## More info
-[Project site on Coursera](https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project)
-[Info about experiment](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+- [Project site on Coursera](https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project)
+- [Info about experiment](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
