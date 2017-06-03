@@ -15,19 +15,19 @@ of each variable for each activity and each subject.
 1. Clone this repository: `$: git clone git@github.com:mtakac/getting-and-cleaning-data-course-project.git`
 2. Start up `R` console or R IDE: `$: R`
 3. Change working directory to root directory of this project: `R: setwd("/path/to/getting-and-cleaning-data-course-project")`
-4. Source the `run_analysis.R` file: `R: source("./run_analysis.R")`
+4. Source the `run-analysis.R` file: `R: source("./run-analysis.R")`
 5. Call the function `run_analysis`: `run_analysis()`
 
 This will return a data frame from step 5 as well as create a new file `./data/summarized-data.txt` containing data
 from this data frame.
 
 ## Dependencies
-Script `run_analysis.R` uses [dplyr](https://github.com/tidyverse/dplyr) library. Make sure you have the library
+Script `run-analysis.R` uses [dplyr](https://github.com/tidyverse/dplyr) library. Make sure you have the library
 installed before running the script: `R: install.packages(dplyr)`
 
 ## Structure
 1. `./data/UCI HAR Dataset` - Original data downloaded during the first run.
-2. `./data/summarized-data.txt` - Summarized data created by `run_analysis.R` script during it's first run.
+2. `./data/summarized-data.txt` - Summarized data created by `run-analysis.R` script during it's first run.
 3. `./code-book.md` - Code book containing info about variables.
 4. `./README.md`
 5. `./run-analysis.R` - R scipt responsible for creating new summarized data frame.
