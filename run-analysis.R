@@ -10,16 +10,9 @@
 ##    5. Create new, independent tidy data set with average of each variable for each
 ##      activity and subject
 
-## Load needed libraries
-library(dplyr)
-
-## Set working directory to script directory
-dirname <- dirname(parent.frame(2)$ofile)
-print(paste("Setting your woking directory to", dirname, "..."))
-setwd(dirname);
-print("Done!")
-
 run_analysis <- function() {
+    ## Load needed libraries
+    library(dplyr)
 
     ## Download data and create needed data structure
     ##
@@ -62,12 +55,13 @@ run_analysis <- function() {
         print("... Merging feature data files...")
         ## read feature names from features data set
         features <- read.table(paste(path, "features.txt", sep = "/"), header = FALSE)
+
         data_x <- rbind(
             read.table(paste(path, "test/X_test.txt", sep = "/"), header = FALSE, col.names = features[, 2]),
             read.table(paste(path, "train/X_train.txt", sep = "/"), header = FALSE, col.names = features[, 2])
         )
-        # select only measurments on the mean and standard deviation
-        data_x <- select(data_x, grep("(mean|std)", names(data_x)))
+        ## select only measurments on the mean and standard deviation
+        data_x <- select(data_x, grep("(\\.mean\\.|\\.std\\.)", names(data_x)))
         print("... Done!")
 
         print("... Merging label data files...")
