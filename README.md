@@ -27,7 +27,7 @@ installed before running the script: `R: install.packages(dplyr)`
 
 ## Structure
 1. `./data/UCI HAR Dataset` - Original data downloaded during the first run.
-2. `./data/summarized-data.txt` - Summarized data created by `run_analysis.R` script during it's first run.
+2. `./data/summarized-data.txt` - Summarized data created by `run-analysis.R` script during it's first run.
 3. `./code-book.md` - Code book containing info about variables.
 4. `./README.md`
 5. `./run-analysis.R` - R scipt responsible for creating new summarized data frame.
